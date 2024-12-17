@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Over Stripe",
+  "version": "1.0",
+  "description": "An extension to enhance Stripe functionality.",
+  "icons": {
+    "16": "icons/dragon1.png",
+    "48": "icons/dragon2.png",
+    "128": "icons/dragon3.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/dragon1.png",
+      "48": "icons/dragon2.png",
+      "128": "icons/dragon3.png"
+    },
+    "default_title": "Over Stripe",
+    "default_popup": "options.html"
+  },
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["<all_urls>"]
+}
